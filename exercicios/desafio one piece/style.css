@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+:root{
+    --cor0:#025b6b;
+    --cor1:#64beba;
+    --cor2:#0074E0;
+    --cor3:#01407a;
+    --cor4:#fab157;
+    --cor5:#CC0706;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: times, serif.
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
+    background-image: url("body.jpg");
+    background-position: absolute;
+}
+
+header{
+    background-image: url("header.jpg");
+    background-position: center;
+    background-size: 140%;
+    min-height: 110px;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+header>h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.322);
+    padding-top: 20px;
+}
+
+header>p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.322);
+    padding-bottom: 20px;
+}
+
+nav{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.267);
+}
+
+nav>a{
+    color: var(--cor3);
+    text-decoration: none;
+    padding: 7px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav>a:hover{
+    background-color: var(--cor3);
+    color: var(--cor4);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+main img{
+    width: 100%;
+    box-shadow: 0px 0px 2px black;
+    
+}
+
+main img.pequena{
+    max-width: 550px;
+    margin: auto;
+    display: block;
+    
+}
+
+main ul{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 20px;
+}
+
+main>article>p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+
+}
+
+main h2{
+    background-color: var(--cor5);
+    color: white;
+    box-shadow: 0px 0px 2px black;
+    padding: 15px;
+    text-align: center;
+    margin: -20px -20px;
+    margin-bottom: 0px;
+    
+}
+
+aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.267);
+}
+
+aside>ul>li>p{
+    background-color: var(--cor5);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+

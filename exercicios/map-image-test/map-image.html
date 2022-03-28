@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Responsive Image Maps jQuery Plugin</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1"/>
+  <script src="../../js/ios-orientationchange-fix.min.js"></script>
+  <Style>
+    img{
+      width: 1920px;
+      max-width: 97vw;
+    }
+  </Style>
+  
+</head>
+
+<body>
+
+  <h1>Image Maps</h1>
+
+  <img src="teste01.jpg" alt="quadrado preto" usemap="#test-amarelo">
+
+  <map name="test-amarelo">
+    <area shape="rect" coords="650,400,850,600" href="https://www.youtube.com/watch?v=mEsn08e0Nwc&ab_channel=hcode" target="_blank" alt="quadrado central">
+  </map>
+
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script src="image-map-resp/jquery.rwdimageMaps.min.js"></script>
+  <script>
+    $(document).ready(function(e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Responsive Image Maps jQuery Plugin</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1"/>
+    <script src="../../js/ios-orientationchange-fix.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main>img{
+            width: 1200px;
+            max-width: 97vw;  
+        }        
+    </style>    
+</head>
+
+<body>
+    <main>
+        <img src="images/wallpaper03.jpg" alt="personagens principais e seus cartazes de procurado" usemap="#onepiece">
+        <map name="onepiece">
+            <area
+                title="Luffy"
+                shape="poly"
+                coords="10,10,230,53,543,317,888,399,930,543,801,669,601,645,7,978"
+                href="#luffy"
+                alt="Cartaz de procurado do Luffy">
+            </area>
+            <area
+                title="Nami"
+                shape="poly"
+                coords="120,1076,348,806,615,665,726,693,771,821,645,1076"
+                href="#nami"
+                alt="Cartaz de procurado da Nami">
+            </area>
+            <area
+                title="Zoro"
+                shape="poly"
+                coords="670,1073,727,962,850,900,883,660,1026,666,1035,909,1200,1076"
+                href="#zoro"
+                alt="Cartaz de procurado do Zoro">
+            </area>
+            <area
+                title="Chopper"
+                shape="poly"
+                coords="1054,842,1080,746,1240,693,1400,744,1356,944,1180,1002"
+                href="#chopper"
+                alt="Cartaz de procurado do Chopper">
+            </area>
+            <area
+                title="Franky"
+                shape="poly"
+                coords="1228,1074,1194,1031,1372,959,1395,824,1545,708,1915,730,1915,1076"
+                href="#franky"
+                alt="Cartaz de procurado do Franky">
+            </area>
+            <area
+                title="Sanji"
+                shape="poly"
+                coords="1222,657,1185,545,1266,458,1453,428,1500,308,1915,220,1915,720,1546,689,1444,644,1299,669"
+                href="#sanji"
+                alt="Cartaz de procurado do Sanji">
+            </area>
+            <area
+                title="Brook"
+                shape="poly"
+                coords="1200,6,1915,6,1915,200,1381,338,1385,386,1168,531,1050,500,970,410,1080,383"
+                href="#brook"
+                alt="Cartaz de procurado do Brook">
+            </area>
+            <area
+                title="Nico Robin"
+                shape="poly"
+                coords="874,6,1186,6,1090,339,1039,383,979,387,910,340"
+                href="#nicorobin"
+                alt="Cartaz de procurado da Nico Robin">
+            </area>
+            <area
+                title="Usopp"
+                shape="poly"
+                coords="355,6,856,6,891,312,846,363,807,371,312,100,498,229,306,83"
+                href="#usopp"
+                alt="Cartaz de procurado do Usopp">
+            </area>
+        </map>
+        <section>
+            <div class="popup" id="luffy">
+                <img src="images/wantedluffy.png" alt="Cartaz do Luffy">
+            </div>
+            <div class="popup" id="nami">
+                <img src="images/wantednami.png" alt="Cartaz da Nami">
+            </div>
+            <div class="popup" id="zoro">
+                <img src="images/wantedzoro.png" alt="Cartaz do Zoro">
+            </div>
+            <div class="popup" id="chopper">
+                <img src="images/wantedchopper.png" alt="Cartaz do Chopper">
+            </div>
+            <div class="popup" id="franky">
+                <img src="images/wantedfranky.png" alt="Cartaz do Franky">
+            </div>
+            <div class="popup" id="sanji">
+                <img src="images/wantedsanji.png" alt="Cartaz do Sanji">
+            </div>
+            <div class="popup" id="brook">
+                <img src="images/wantedbrook.png" alt="Cartaz do Brook">
+            </div>
+            <div class="popup" id="nicorobin">
+                <img src="images/wantedrobin.png" alt="Cartaz da Nico Robin">            
+            </div>
+            <div class="popup" id="usopp">
+                <img src="images/wantedusopp.png" alt="Cartaz do Usopp">
+            </div>
+
+            <div class="overlay">
+                <div class="overlay-inner">
+                    <button class="close">Close</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+---------------------------------------------------
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="image-map-resp/jquery.rwdimageMaps.min.js"></script>
+    <script>
+        $(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+</body>
+</html>

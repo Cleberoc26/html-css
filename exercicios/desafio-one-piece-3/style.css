@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    max-width: 1200px;
+}
+
+.popup>img{
+    max-width: 565px;
+    max-height: 800px;
+}
+.popup{
+    max-width: 565px;
+    max-height: 800px;
+}
